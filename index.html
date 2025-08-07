@@ -21,35 +21,37 @@
     .product-card h3{color:#A81D02;font-size:1.2rem;margin-bottom:5px;}
     .product-card p{font-size:0.95rem;}
     #about p,#vision p{max-width:900px;margin:0 auto 40px;text-align:left;font-size:1rem;}
-    .about-section {
-  background-image: url('FACTORY LAYOUT.JPEG'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white; 
+    .about-us-section {
   position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+  color: white;
 }
 
-.about-section::before {
+.about-us-section::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.4); 
+  height: 100%;
+  background-image: url('images/about-bg.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust blur level */
+  transform: scale(1.1); /* Slight zoom to hide blur edges */
   z-index: 0;
 }
 
-.about-section .content-wrapper {
+.about-content {
   position: relative;
   z-index: 1;
   max-width: 900px;
   margin: auto;
-  background-color: rgba(255,255,255,0.1); 
-  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional dark background for text contrast */
+  padding: 40px;
   border-radius: 12px;
 }
+
     .mission-section {
   background-image: url('COMPANY LOGO.jpg'); /* Replace with your actual path */
   background-size: cover;
