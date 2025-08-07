@@ -50,6 +50,48 @@
   padding: 30px;
   border-radius: 12px;
 }
+    .mission-section {
+  background-image: url('COMPANY LOGO.jpg'); /* Replace with your actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.vision-section {
+  background-image: url('FACTORY.jpg'); /* Replace with your actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.mission-section::before,
+.vision-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+  z-index: 0;
+}
+
+.mission-section .content-wrapper,
+.vision-section .content-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Optional background for text block */
+  padding: 30px;
+  border-radius: 12px;
+}
+
 
     .red-section{background:#A81D02;color:#fff;padding:50px 20px;text-align:left;}
     .red-section h2{color:#fff;}
@@ -128,40 +170,38 @@ Thank you for choosing Arihant. Together, let’s build a healthier tomorrow, on
   </div>
 </section>
 
-<section id="mission" class="red-section">
-  <h2>Our Mission</h2>
-  <p>
+<section id="mission" class="mission-section">
+  <div class="content-wrapper">
+    <h2>Our Mission</h2>
     <ul>
-<li>To deliver pure, nutritious, and high-quality dairy products to consumers across India.</li>
-<li>To uphold traditional Indian dairy practices while embracing modern food safety standards.</li>
-<li>To empower rural dairy farmers through fair pricing, training, and long-term partnerships.</li>
-<li>To practice ethical and humane treatment of livestock at every level of sourcing.</li>
-<li>To maintain uncompromising quality with rigorous testing and FSSAI-compliant processes.</li> 
-<li>To use eco-friendly, tamper-proof packaging that preserves freshness and reduces waste.</li>      
-<li>To offer a complete dairy solution for both B2C (households) and B2B (hotels, retailers, wholesalers).</li>
-<li>To promote wellness through clean-label dairy free from harmful additives or adulterants.</li>
-<li>To continuously educate consumers on the health benefits of traditional dairy in everyday life.</li>      
-
-    </ul></p>
+      <li>To deliver pure and nutritious dairy products from farm to table.</li>
+      <li>To uplift local farmers by ensuring fair prices and steady demand.</li>
+      <li>To lead innovation in dairy processing while maintaining tradition.</li>
+      <li>To promote sustainable and ethical dairy practices.</li>
+      <li>To educate consumers on health benefits of pure dairy.</li>
+      <li>To build a reliable supply chain ensuring product freshness.</li>
+      <li>To empower rural communities through employment.</li>
+      <li>To ensure transparency and traceability in every batch.</li>
+      <li>To become a globally trusted Indian dairy brand.</li>
+    </ul>
+  </div>
 </section>
 
-<section id="vision">
-  <h2>Our Vision</h2>
-  
-  <p>
+<section id="vision" class="vision-section">
+  <div class="content-wrapper">
+    <h2>Our Vision</h2>
     <ul>
-      <li>To be India’s most trusted, respected, and consumer-first dairy brand.</li>
-<li>To create a national and global footprint while staying rooted in Indian dairy heritage.</li>
-<li>To set industry benchmarks in purity, taste, quality, and ethical sourcing.</li>
-<li>To become a household name synonymous with freshness, honesty, and nourishment.</li>
-<li>To lead innovation in dairy with new formats, functional products, and sustainable practices.</li>
-<li>To build a transparent, traceable, and technology-driven dairy value chain.</li>
-<li>To uplift rural economies by creating consistent income and dignified livelihoods for farmers.</li>
-<li>To positively impact public health through nutrition-rich, accessible dairy products.</li>
-<li>To champion sustainability by reducing our carbon footprint and embracing green practices at scale.</li>
-
+      <li>To be a household name known for purity and quality in dairy.</li>
+      <li>To revolutionize dairy access through tech-driven systems.</li>
+      <li>To minimize adulteration and ensure food safety.</li>
+      <li>To create India's most transparent dairy sourcing model.</li>
+      <li>To expand into international markets with Indian dairy values.</li>
+      <li>To invest in R&D for innovative dairy-based products.</li>
+      <li>To set benchmarks for ethical dairy manufacturing.</li>
+      <li>To build strong, long-lasting consumer relationships.</li>
+      <li>To shape a healthier, protein-rich India through dairy.</li>
     </ul>
-</p>
+  </div>
 </section>
  </body>
 <section id="testimonials">
