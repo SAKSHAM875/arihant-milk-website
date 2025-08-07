@@ -21,6 +21,36 @@
     .product-card h3{color:#A81D02;font-size:1.2rem;margin-bottom:5px;}
     .product-card p{font-size:0.95rem;}
     #about p,#vision p{max-width:900px;margin:0 auto 40px;text-align:center;font-size:1rem;}
+    .about-section {
+  background-image: url('FACTORY.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; 
+  position: relative;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 0;
+}
+
+.about-section .content-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255,255,255,0.1); 
+  padding: 30px;
+  border-radius: 12px;
+}
+
     .red-section{background:#A81D02;color:#fff;padding:50px 20px;text-align:center;}
     .red-section h2{color:#fff;}
     .red-section p{max-width:800px;margin:0 auto;}
